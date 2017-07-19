@@ -5,7 +5,13 @@ Based on work by [Simo Ahava](https://github.com/sahava): http://www.simoahava.c
 
 This script will automatically track all forms on your pages. When a user changes input values on a form, it will be tracked unless the form is the one being submitted. Form and input 'name' attributes are used by default.
 
-See [index.html](index.html) for an example.
+See [index.html](index.html) for an example. Or setup a Tag like this:
+
+1. Tag -> Custom HTML -> Paste [auto-ga-form-abandonment.js](auto-ga-form-abandonment.js) in
+2. Trigger -> Trigger when the form you want exists then fire this tag. Example:
+    - In Trigger: Dom Ready -> Some DOM Ready Events -> (Var to get form) Contains -> 'formId'
+    
+
 
 ## Prerequisites
 
