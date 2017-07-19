@@ -12,7 +12,7 @@ See [index.html](index.html) for an example. Or setup a Tag like this:
     - In Trigger: Dom Ready -> Some DOM Ready Events -> (Var to get form) Contains -> `'formId'`
     
 ```
-Var - GetForm()
+//Var - GetForm()
 function() {
   	//[0] would be the search form
 	return document.querySelectorAll('form')[1].id;
