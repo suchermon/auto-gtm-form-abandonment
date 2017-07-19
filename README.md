@@ -9,9 +9,15 @@ See [index.html](index.html) for an example. Or setup a Tag like this:
 
 1. Tag -> Custom HTML -> Paste [auto-ga-form-abandonment.js](auto-ga-form-abandonment.js) in
 2. Trigger -> Trigger when the form you want exists then fire this tag. Example:
-    - In Trigger: Dom Ready -> Some DOM Ready Events -> (Var to get form) Contains -> 'formId'
+    - In Trigger: Dom Ready -> Some DOM Ready Events -> (Var to get form) Contains -> `'formId'`
     
-
+```
+Var - GetForm()
+function() {
+  	//[0] would be the search form
+	return document.querySelectorAll('form')[1].id;
+}
+```
 
 ## Prerequisites
 
