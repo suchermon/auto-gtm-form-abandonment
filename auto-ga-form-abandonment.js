@@ -21,7 +21,7 @@
           var inputName = target.getAttribute("name")
           var form = target.form
           if (form && inputName) {
-            var formName = form.getAttribute("name")
+            var formName = form.getAttribute("name") || form.getAttribute("name");
             if (typeof history[formName] == "undefined") {
               history[formName] = []
             }
